@@ -12,12 +12,12 @@ This application needs
 1.JAVA8
 2.MAVEN
 3.Git
-4.Any preferred IDE for development and testin pusposes.
+4.Any preferred IDE for development and testing pusposes.
 5.SONARCUQE
 
 ### Installing
 
-Download zip or copy the porject url and cole it into you local machine using git clone command
+Download zip or copy the porject url and clone it into you local machine using git clone command
 
 
 ## Install and Run
