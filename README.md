@@ -32,4 +32,4 @@ mvn spring-boot:run - will start the project and can be accessed on http://local
 8080 is default port on which poject will start, if you need to change the port go to projects application.properties file and add server.port={portNumber}
 
 ## Acknowledgment
-Go to Wiki to see class diagrams and sonar cube dashborad screenshots.
+See attached files for class diagrams and sonar cube dashborad screenshots.
