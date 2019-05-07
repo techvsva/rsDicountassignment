@@ -34,7 +34,7 @@ Sonarqube dashboard can be accessed on http://localhost:9000/dashboard?id=com.as
 ### Generate Jacoco Report
 
 To generate jacoco report run - *mvn clean install jacoco:report*.
-After Report generation navigate into project - *target/site/index.html* and open *index.html* in browser.
+After Report generation navigate into project - *target/site/jacoco/index.html* and open *index.html* in browser.
 
 ## Acknowledgment
 See attached files for class diagrams and sonar cube dashborad screenshots.
