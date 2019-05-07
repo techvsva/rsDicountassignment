@@ -2,7 +2,6 @@ package com.assgnment.rs.discount.models;
 
 import com.assgnment.rs.discount.enums.UserType;
 
-import java.time.LocalDate;
 import java.time.LocalDateTime;
 
 public class User {

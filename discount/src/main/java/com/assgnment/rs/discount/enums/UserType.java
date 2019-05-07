@@ -32,8 +32,11 @@ public enum UserType {
         public UserRule getUserRule(Bill bill) {
             LoadProperties loadProperties = new LoadProperties();
             int discountValue = loadProperties.getPropertiesForDiscountValue("CustomerDiscountMinPer");
-            long durationSince = DateUtility.getDateDuration(bill.getUser().getUserSince());
-            if(durationSince>=2l)
+            long durationSince = 0l;
+            long minAssociationYear = loadProperties.getPropertiesForDiscountValue("minAssociationYear");
+            if(bill.getUser()!=null && bill.getUser().getUserSince()!=null)
+                durationSince = DateUtility.getDateDuration(bill.getUser().getUserSince());
+            if(durationSince>=minAssociationYear)
                 discountValue = loadProperties.getPropertiesForDiscountValue("CustomerDiscountMaxPer");
             UserRule userRule = new UserRule();
             userRule.setAppliedDiscountPer(discountValue);

@@ -11,6 +11,7 @@ public class BillServiceImpl implements BillService {
 
     @Autowired
     private BillUtility billUtility;
+
     @Override
     public UserDto getNetPayableAmt(Bill bill) {
         return billUtility.netPayableAmt(bill);
